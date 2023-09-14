@@ -80,36 +80,6 @@
                             <ul class="nav pull-right">
                                 <li class="divider-vertical"></li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="danger-action" href="#" id="flush_db">
-                                                <i class="icon-trash"></i> Flush Db
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="danger-action" href="#" id="flush_all">
-                                                <i class="icon-remove"></i> Flush All
-                                            </a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li>
-                                            <a id="save_async" href="#">
-                                                <i class="icon-save"></i> Asynchronous Save
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="warning-action" id="save_sync" href="#">
-                                                <i class="icon-save"></i> Synchronous Save
-                                            </a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li>
-                                            <a class="warning-action" href="#" id="reset_stats">
-                                                <i class="icon-refresh"></i> Reset Stats
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                             </ul>
                         </div>

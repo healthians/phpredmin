@@ -34,11 +34,7 @@
             <th>TTL</th>
             <th>Encoding</th>
             <th>Size</th>
-            <th>Expire</th>
-            <th>Rename</th>
             <th>View</th>
-            <th>Move</th>
-            <th>Delete</th>
             <th></th>
         </tr>
         <?php foreach ($this->keys as $key): ?>
@@ -59,28 +55,8 @@
                 <?=Redis_Helper::instance()->getSize($key)?>
             </td>
             <td>
-                <a href="<?=$this->router->url?>/keys/expire/<?= $this->app->current['serverId'] . '/' . $this->app->current['database'] ?>/<?=urlencode($key)?>" target="_blank" class="action">
-                    <i class="icon icon-time"></i>
-                </a>
-            </td>
-            <td>
-                <a href="<?=$this->router->url?>/keys/rename/<?= $this->app->current['serverId'] . '/' . $this->app->current['database'] ?>/<?=urlencode($key)?>" target="_blank" class="action">
-                    <i class="icon icon-edit"></i>
-                </a>
-            </td>
-            <td>
                 <a href="<?=$this->router->url?>/keys/view/<?= $this->app->current['serverId'] . '/' . $this->app->current['database'] ?>/<?=urlencode($key)?>" target="_blank" class="action">
                     <i class="icon icon-folder-open-alt"></i>
-                </a>
-            </td>
-            <td>
-                <a href="<?=$this->router->url?>/keys/move/<?= $this->app->current['serverId'] . '/' . $this->app->current['database'] ?>/<?=urlencode($key)?>" target="_blank" class="action">
-                    <i class="icon icon-move"></i>
-                </a>
-            </td>
-            <td>
-                <a href="#" class="action del">
-                    <i class="icon icon-trash" id="<?=$key?>" keytype="keys"></i>
                 </a>
             </td>
             <td>
@@ -90,19 +66,6 @@
         <?php endforeach; ?>
         <tr>
             <td colspan="8">
-            </td>
-            <td>
-                <a href="#" class="action moveall">
-                    <i class="icon icon-move" keytype="keys" modaltitle="Move key to?" modaltip="Database Number"></i>
-                </a>
-            </td>
-            <td>
-                <a href="#" class="action delall">
-                    <i class="icon icon-trash" keytype="keys"></i>
-                </a>
-            </td>
-            <td>
-                <input type="checkbox" name="checkall" id="checkall" class="all-key-checkbox" />
             </td>
         </tr>
     </table>
