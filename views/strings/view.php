@@ -17,6 +17,6 @@
             <textarea name="newvalue"><?=$this->value?></textarea>
         </div>
         <input name="key" value="<?=$this->key?>" type="hidden" />
-        <button type="submit" class="btn"><i class="icon-edit"></i> Edit</button>
+        <!-- <button type="submit" class="btn"><i class="icon-edit"></i> Edit</button> -->
     </form>
 </div>
